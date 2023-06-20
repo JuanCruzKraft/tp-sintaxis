@@ -1,0 +1,13 @@
+AFD Acepta0Pares = (Q, \Sigma, f, q_par0, F)
+@autor: 'Silvio'
+@fecha: 11/04/2023
+@version: 1.0.0-beta
+// Definición del conjunto de estados Q
+Q= {q_par0, q_impar0}
+\Sigma= {0, 1}	// definición del alfabeto
+F= {q_par0}	// definición del conjunto de estados de aceptación
+// Definición de la función de transición f 
+f(q_par0,0)= q_impar0
+f(q_par0,1)= q_par0
+f(q_impar0, 0)= q_par0
+f(q_impar0, 1)= q_impar0 

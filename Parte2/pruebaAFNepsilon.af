@@ -1,0 +1,26 @@
+AFN-\epsilon Eabc = (Q, \Sigma, f, q0, F)
+@autor: 'John Hopcroft'
+@fecha: 11/04/2023
+@version: 1.0.0
+// Definición del conjunto de estados Q
+Q= {q0,q1,q2,q3}
+\Sigma= {a,b,c}
+F= {q3}
+// Definición de la función de transición f 
+f(q0,a)= {q0}
+f(q0,b)= \emptyset
+f(q0,c)= \emptyset
+f(q0,\epsilon)= {q1}
+f(q1,a)= \emptyset
+f(q1,b)= {q1}
+f(q1,c)= \emptyset
+f(q1,\epsilon)= {q2}
+f(q2,a)= \emptyset
+f(q2,b)= \emptyset
+f(q2,c)= {q2}
+f(q2,\epsilon)= {q3}
+f(q3,a)= \emptyset
+f(q3,b)= \emptyset
+f(q3,c)= \emptyset
+f(q3,\epsilon)= \emptyset
+
